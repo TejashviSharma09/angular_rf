@@ -1,0 +1,17 @@
+<form [formGroup]="studentForm">
+
+    <label>
+        Name:
+        <input type="text" formControlName="Name">
+    </label><br>
+
+    <label>
+        University:
+        <input type="text" formControlName="University">
+    </label><br>
+
+</form><br>
+
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()"></form>
+
+<button type= "submit">SUBMIT</button>
